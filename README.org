@@ -1,0 +1,8 @@
+#+title: Basic Scala project
+
+* Usage
+
+Start SBT (Scala Build Tool) by typing ~./sbt.sh~ at the command line. SBT will
+then download half the internet for you. After that, you can type ~run~.
+
+
