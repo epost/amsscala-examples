@@ -16,20 +16,23 @@ object MyBuild extends Build {
         organization := "nl.shinsetsu",
         organizationName := "Shinsetsu",
         libraryDependencies ++= Seq(
-          // functional programmings libraries
-          "org.scalaz"           %% "scalaz-core"       % "7.0.5" withSources,
-          "org.scalaz"           %% "scalaz-effect"     % "7.0.5" withSources,
+
+          // functional programming libraries
+          "org.scalaz"           %% "scalaz-core"       % "7.1.2" withSources,
+          "org.scalaz"           %% "scalaz-effect"     % "7.1.2" withSources
+
+          // "org.scalaz.stream"    %% "scalaz-stream"     % "0.7.1a" withSources,
+
+          // // database and logging libraries
+          // "com.typesafe.slick"   %% "slick"             % "2.0.1-RC1" withSources,
+          // "org.xerial"           %  "sqlite-jdbc"       % "3.7.2",
+          // "org.slf4j"            %  "slf4j-log4j12"     % "1.6.1",
     
-          // database and logging libraries
-          "com.typesafe.slick"   %% "slick"             % "2.0.1-RC1" withSources,
-          "org.xerial"           %  "sqlite-jdbc"       % "3.7.2",
-          "org.slf4j"            %  "slf4j-log4j12"     % "1.6.1",
-    
-          // testing libraries
-          "junit"                %  "junit"             % "4.5" % "test->default",
-          "org.specs2"           %% "specs2"            % "1.13" % "test"
+          // // testing libraries
+          // "junit"                %  "junit"             % "4.5" % "test->default",
+          // "org.specs2"           %% "specs2"            % "1.13" % "test"
         ),
-        scalaVersion := "2.10.3",
+        scalaVersion := "2.11.6",
         scalacOptions ++= List("-deprecation", "-unchecked", "-Xlint"),
         resolvers += Resolver.sonatypeRepo("snapshots")
       )
