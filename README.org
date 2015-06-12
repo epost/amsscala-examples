@@ -1,8 +1,5 @@
-#+title: Basic Scala project
+#+title: Amsterdam Scala Meetup Examples
 
-* Usage
+This repo contains some example code. For now:
 
-Start SBT (Scala Build Tool) by typing ~./sbt.sh~ at the command line. SBT will
-then download half the internet for you. After that, you can type ~run~.
-
-
+- Some scalaz snippets we looked at during the Scala Hack Night on 2015-04-02 with Waldo, Said and others.
