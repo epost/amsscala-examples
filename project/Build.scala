@@ -34,7 +34,10 @@ object MyBuild extends Build {
         ),
         scalaVersion := "2.11.6",
         scalacOptions ++= List("-deprecation", "-unchecked", "-Xlint"),
-        resolvers += Resolver.sonatypeRepo("snapshots")
+        resolvers ++= Seq(
+          Resolver.sonatypeRepo("snapshots"),
+          "Scalaz Bintray Repo" at "https://dl.bintray.com/scalaz/releases"
+        )
       )
   )
 }
