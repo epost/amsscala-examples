@@ -18,8 +18,9 @@ object MyBuild extends Build {
         libraryDependencies ++= Seq(
 
           // functional programming libraries
-          "org.scalaz"           %% "scalaz-core"       % "7.1.2" withSources,
-          "org.scalaz"           %% "scalaz-effect"     % "7.1.2" withSources
+          "org.scalaz"           %% "scalaz-core"       % "7.1.3" withSources,
+          "org.scalaz"           %% "scalaz-concurrent" % "7.1.3" withSources,
+          "org.scalaz"           %% "scalaz-effect"     % "7.1.3" withSources,
 
           // "org.scalaz.stream"    %% "scalaz-stream"     % "0.7.1a" withSources,
 
