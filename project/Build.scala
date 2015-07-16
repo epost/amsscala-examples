@@ -20,7 +20,7 @@ object MyBuild extends Build {
           // functional programming libraries
           "org.scalaz"           %% "scalaz-core"       % "7.1.3" withSources,
           "org.scalaz"           %% "scalaz-concurrent" % "7.1.3" withSources,
-          "org.scalaz"           %% "scalaz-effect"     % "7.1.3" withSources,
+          "org.scalaz"           %% "scalaz-effect"     % "7.1.3" withSources
 
           // "org.scalaz.stream"    %% "scalaz-stream"     % "0.7.1a" withSources,
 
@@ -37,8 +37,11 @@ object MyBuild extends Build {
         scalacOptions ++= List("-deprecation", "-unchecked", "-Xlint"),
         resolvers ++= Seq(
           Resolver.sonatypeRepo("snapshots"),
-          "Scalaz Bintray Repo" at "https://dl.bintray.com/scalaz/releases"
-        )
+          "Scalaz Bintray Repo" at "https://dl.bintray.com/scalaz/releases",
+          "bintray/non" at "http://dl.bintray.com/non/maven"
+        ),
+        addCompilerPlugin("org.spire-math" %% "kind-projector" % "0.6.0") // cross CrossVersion.binary
       )
   )
 }
+
